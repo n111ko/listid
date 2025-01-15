@@ -59,13 +59,18 @@ if v == "jah":
 
     if v == "P":
         print("Sisesta nime asukoht")
+        
         v = int(input())
-
+        uus_nimi = input("Uus nimi: ")
+        nimed[v - 1] = uus_nimi
 
     else:
         print("Sisesta nimi")
+        uus_nimi = input("Uus nimi: ")
+        v = nimed.index(uus_nimi)
+        nimed[v] = uus_nimi
 
-
+    print(nimed)
 
 
 
